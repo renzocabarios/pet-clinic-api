@@ -5,7 +5,7 @@ import {
   add,
   update,
   deleteById,
-} from "./controllers/animal-type.controller.js";
+} from "./animal-type.controller.js";
 
 const router = Router();
 router.route("/").get(getAll).post(add);

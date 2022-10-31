@@ -4,7 +4,7 @@ import cors from "cors";
 
 import connectDB from "./app/db/index.js";
 import ENV from "./app/env/index.js";
-import animalTypeRoute from "./app/routes/animal-type.route.js";
+import animalTypeRoute from "./app/routes/animal-type/animal-type.route.js";
 import animalRoute from "./app/routes/animal.route.js";
 import userRoute from "./app/routes/user.route.js";
 import diseaseRoute from "./app/routes/disease.route.js";
@@ -19,7 +19,7 @@ const app = express();
 // middlewares
 app.use(bodyParser.json(), bodyParser.urlencoded({ extended: false }));
 app.use(cors());
-app.use(auth);
+// app.use(auth);
 
 //routes
 app.use("/api/animal-type", animalTypeRoute);
