@@ -5,7 +5,7 @@ import cors from "cors";
 import connectDB from "./app/db/index.js";
 import ENV from "./app/env/index.js";
 import animalTypeRoute from "./app/routes/animal-type/animal-type.route.js";
-import animalRoute from "./app/routes/animal.route.js";
+import animalRoute from "./app/routes/animal/animal.route.js";
 import userRoute from "./app/routes/user.route.js";
 import diseaseRoute from "./app/routes/disease.route.js";
 import positionRoute from "./app/routes/position.route.js";

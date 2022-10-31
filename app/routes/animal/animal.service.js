@@ -1,4 +1,4 @@
-import model from "../models/animal-type.model.js";
+import model from "./animal.model.js";
 
 const getAll = async () => {
   return await model.find({ deleted: false });
@@ -13,9 +13,16 @@ const add = async (body) => {
 };
 
 const update = async (_id, body) => {
-  return await model.findOneAndUpdate({ _id, deleted: false }, body, {
-    new: true,
-  });
+  return await model.findOneAndUpdate(
+    {
+      _id,
+      deleted: false,
+    },
+    body,
+    {
+      new: true,
+    }
+  );
 };
 
 const deleteById = async (_id) => {
