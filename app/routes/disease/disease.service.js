@@ -1,4 +1,4 @@
-import model from "../models/disease.model.js";
+import model from "./disease.model.js";
 
 const getAll = async () => {
   return await model.find({ deleted: false });
