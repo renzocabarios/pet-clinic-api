@@ -1,6 +1,6 @@
 import model from "./adopter.model.js";
 
-const getAll = async (query) => {
+const getAll = async () => {
   return await model.find({ deleted: false });
 };
 

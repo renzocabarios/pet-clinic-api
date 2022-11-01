@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import paginate from "mongoose-paginate";
-import { MODEL } from "../../../constants/index.js";
-import model from "./user.model.js";
+import { MODEL } from "../../constants/index.js";
+import model from "../user/user.model.js";
 
 const schema = mongoose.Schema({
   position: {

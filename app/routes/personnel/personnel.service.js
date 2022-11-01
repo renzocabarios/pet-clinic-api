@@ -1,8 +1,7 @@
-import model from "../../models/user/personnel.model.js";
+import model from "./personnel.model.js";
 
-const getAll = async (query) => {
-  const populate = query.populate ?? {};
-  return await model.find({ deleted: false }).populate(populate);
+const getAll = async () => {
+  return await model.find({ deleted: false });
 };
 
 const add = async (body) => {

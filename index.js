@@ -7,12 +7,11 @@ import ENV from "./app/env/index.js";
 import animalTypeRoute from "./app/routes/animal-type/animal-type.route.js";
 import animalRoute from "./app/routes/animal/animal.route.js";
 import diseaseRoute from "./app/routes/disease/disease.route.js";
-import userRoute from "./app/routes/user.route.js";
+import userRoute from "./app/routes/user/user.route.js";
 import positionRoute from "./app/routes/position/position.route.js";
-import personnelRoute from "./app/routes/personnel.route.js";
-import adopterRoute from "./app/routes/adopter.route.js";
+import personnelRoute from "./app/routes/personnel/personnel.route.js";
+import adopterRoute from "./app/routes/adopter/adopter.route.js";
 import { auth } from "./app/middleware/auth.middleware.js";
-import adoptionRoute from "./app/routes/adoption.route.js";
 
 const app = express();
 
@@ -29,7 +28,6 @@ app.use("/api/disease", diseaseRoute);
 app.use("/api/position", positionRoute);
 app.use("/api/personnel", personnelRoute);
 app.use("/api/adopter", adopterRoute);
-app.use("/api/adoption", adoptionRoute);
 
 //initialization
 const start = () => {

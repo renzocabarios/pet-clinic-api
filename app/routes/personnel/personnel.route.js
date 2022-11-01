@@ -3,7 +3,7 @@ import {
   getAll,
   add,
   changePosition,
-} from "./controllers/user/personnel.controller.js";
+} from "./personnel.controller.js";
 
 const router = Router();
 router.route("/").get(getAll).post(add);
