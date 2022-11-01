@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import paginate from "mongoose-paginate";
-import { MODEL } from "../../../constants/index.js";
+import { MODEL } from "../../constants/index.js";
 
 const options = {
   timestamps: {
@@ -21,11 +21,6 @@ const schema = mongoose.Schema(
       trim: true,
       type: String,
       required: [true, "User Last Name is required."],
-    },
-    email: {
-      trim: true,
-      type: String,
-      required: [true, "User Email is required."],
     },
     email: {
       trim: true,
