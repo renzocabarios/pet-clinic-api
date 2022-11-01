@@ -1,4 +1,4 @@
-import model from "../../models/user/adopter.model.js";
+import model from "./adopter.model.js";
 
 const getAll = async (query) => {
   return await model.find({ deleted: false });
