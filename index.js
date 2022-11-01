@@ -8,7 +8,7 @@ import animalTypeRoute from "./app/routes/animal-type/animal-type.route.js";
 import animalRoute from "./app/routes/animal/animal.route.js";
 import diseaseRoute from "./app/routes/disease/disease.route.js";
 import userRoute from "./app/routes/user.route.js";
-import positionRoute from "./app/routes/position.route.js";
+import positionRoute from "./app/routes/position/position.route.js";
 import personnelRoute from "./app/routes/personnel.route.js";
 import adopterRoute from "./app/routes/adopter.route.js";
 import { auth } from "./app/middleware/auth.middleware.js";

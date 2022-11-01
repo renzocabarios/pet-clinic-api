@@ -1,4 +1,4 @@
-import model from "../models/position.model.js";
+import model from "./position.model.js";
 
 const getAll = async () => {
   return await model.find({ deleted: false });

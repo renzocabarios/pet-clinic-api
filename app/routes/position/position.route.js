@@ -5,7 +5,7 @@ import {
   add,
   update,
   deleteById,
-} from "./controllers/position.controller.js";
+} from "./position.controller.js";
 
 const router = Router();
 router.route("/").get(getAll).post(add);
